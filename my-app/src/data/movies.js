@@ -38,7 +38,7 @@ export const movies = [
   {
     title: "The Matrix",
     year: 1999,
-    img: "./matrix.jpg",
+    img: "/matrix.jpg",
     desc: "A hacker discovers the reality he knows is a simulation and joins a rebellion.",
     production: "Warner Bros",
     rate: 8.7,
@@ -47,7 +47,7 @@ export const movies = [
   {
     title: "Kingsman: The Secret Service",
     year: 2014,
-    img: "./Kingsman-The Secret Service.webp",
+    img: "/Kingsman-The Secret Service.webp",
     desc: "A spy organization recruits a promising street kid into their ultra-competitive training program.",
     production: "20th Century Fox",
     rate: 7.7,
@@ -56,7 +56,7 @@ export const movies = [
   {
     title: "Terminator 2: Judgment Day",
     year: 1991,
-    img: "./Terminator 2-Judgment Day.jfif",
+    img: "/Terminator 2-Judgment Day.jfif",
     desc: "A cyborg must protect a young boy from a more advanced killing machine in the future.",
     production: "TriStar Pictures",
     rate: 8.5,

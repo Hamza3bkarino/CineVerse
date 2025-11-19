@@ -110,3 +110,19 @@ nav ul input:focus {
 .search-input:focus {
     border-color: #4a92ad;  
 }
+
+#searchBtn{
+    padding: 12px 30px;
+    background-color:#4a92ad;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+#searchBtn:hover{
+    background-color: #2c667b;
+    transform: scale(1.01);
+    transition: 0.3s;
+}

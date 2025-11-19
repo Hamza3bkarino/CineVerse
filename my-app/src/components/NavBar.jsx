@@ -1,9 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import '../components/NavBar.css'
 
 export default function NavBar() {
   const [showSearch, setShowSearch] = useState(false);
+  const [search, setSearch] = useState('');
+  const navigate = useNavigate()
+
+
+  const handleClick = ()=>{
+
+    navigate(`search-result?query=${encodeURIComponent(search)}`)
+    setShowSearch(false)
+
+  }
+
 
   return (
     <nav>
@@ -24,13 +35,30 @@ export default function NavBar() {
 
           {/* Search input appears when clicked */}
           {showSearch && (
-            <input
-              type="text"
-              placeholder="Search..."
-              autoFocus
-              className="search-input"
-              onBlur={() => setShowSearch(false)} // hide on click outside
-            />
+            <>
+
+              <div className="search-box" >
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  autoFocus
+                  value={search}
+                  className="search-input"
+                  onBlur={()=>
+                    setTimeout(() => {
+                      if (!document.activeElement.closest(".search-box")) {
+                        setShowSearch(false);
+                      }
+                    }, 0)
+                  }
+                  onChange={(e)=>setSearch(e.target.value)}
+                  
+                />
+                <button onClick={handleClick} id="searchBtn">
+                  search
+                </button>
+              </div>
+            </>
           )}
         </li>
 

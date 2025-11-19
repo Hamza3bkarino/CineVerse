@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { categories, movies, topMovies } from "../data/movies";
+import { useNavigate } from "react-router-dom";
 
 export default function Home(){
 
     const [ init , setInit ] =useState(0);
-    const [curentSlide,setCurentSlide]=useState(0)
+    const [curentSlide,setCurentSlide]=useState(0);
+    const navigate= useNavigate()
+
     const images= [ 
         '../public/WallpaperDog-10915418.jpg',
         '../public/WallpaperDog-10915324.jpg'
@@ -32,7 +35,12 @@ export default function Home(){
         );
       };
 
-
+    const handleClickDiscover = ()=>{
+        location.href='#DiscoverMenu'
+    }
+    const handleCategories = (value)=>{
+        navigate(`/categories#${value}`)
+    }
 
     return(
         <>
@@ -40,7 +48,7 @@ export default function Home(){
             <section className="HeroSectionHome" style={{  backgroundImage:`url('../public/${images[init]}')`, transition:'0.5s'}}>
                 <div className="heroContent">
                     <h1>CineVerse – Where Stories Come Alive</h1>            
-                    <button>
+                    <button onClick={handleClickDiscover}>
                         Discover Movies
                     </button>
                 </div>
@@ -69,8 +77,8 @@ export default function Home(){
                                 T 1440 10"
                                 fill="transparent"
                                 stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
+                                strokeWidth="2"
+                                strokeLinecap="round"
                             />
                         </svg>
 
@@ -101,7 +109,7 @@ export default function Home(){
 
 
 
-            <section className="moviesSection" >
+            <section className="moviesSection" id="DiscoverMenu" >
 
                 <div className="titleMovieSection">
                     <h1>Movies :</h1>
@@ -124,8 +132,8 @@ export default function Home(){
                             T 1440 10"
                             fill="transparent"
                             stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
                         />
                     </svg>
 
@@ -158,7 +166,7 @@ export default function Home(){
                             <div key={index} className="categorieContainer" style={{ backgroundImage:`url(${item.img})` }}>
                                 <div className="content">
                                     <p>{item.desc}</p>
-                                    <button>{item.name}</button>
+                                    <button onClick={()=>handleCategories(item.name)}>{item.name}</button>
                                 </div>
                             </div>
                         ))}

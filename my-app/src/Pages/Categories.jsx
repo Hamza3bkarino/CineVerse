@@ -1,27 +1,59 @@
 import { movies } from "../data/movies";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 export default function Categories(){
 
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Run when URL changes (ex: #Adventure)
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+
+      if (el) {
+
+        const top = el.getBoundingClientRect().top + window.scrollY ;
+
+        window.scrollTo({
+          top,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
+
+
+
   // helper function to check if video is in viewport
   const handleScroll = () => {
-    const video = document.getElementById("myVideo");
-    const adventureVideo = document.getElementById("adventureVideo");
+    const Action = document.getElementById("Action");
+    const Adventure = document.getElementById("Adventure");
+    const Drama = document.getElementById("Drama");
   
-    // Action video
-    if (video) {
-      const rect = video.getBoundingClientRect();
+    // Action Action
+    if (Action) {
+      const rect = Action.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      if (isVisible) video.play();
-      else video.pause();
+      if (isVisible) Action.play();
+      else Action.pause();
     }
   
     // Adventure video
-    if (adventureVideo) {
-      const rect = adventureVideo.getBoundingClientRect();
+    if (Adventure) {
+      const rect = Adventure.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      if (isVisible) adventureVideo.play();
-      else adventureVideo.pause();
+      if (isVisible) Adventure.play();
+      else Adventure.pause();
+    }
+    if (Drama) {
+      const rect = Drama.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      if (isVisible) Drama.play();
+      else Drama.pause();
     }
   };
   
@@ -31,11 +63,12 @@ export default function Categories(){
     window.addEventListener("scroll", handleScroll);
   }
 
+
   return(
     <>
-      <section className="ActionCategorie">
+      <section className="ActionCategorie " id="Action">
         <video 
-          id="myVideo"
+          id="Action"
           src="/extraction.mp4"  // make sure file name is simple
           width="100%" 
           autoPlay
@@ -53,7 +86,7 @@ export default function Categories(){
           <div className="movies-grid">
             {movies.map((item,index)=>(item.categorie === 'Action' ?
               <div className="movie-card" key={index}>
-                <img src={item.img} alt={item.title} />
+                <img src={item.img} alt={item.title} loading="eager"/>
                 <div className="movie-info">
                   <h3>{item.title}</h3>
                   <p>{item.year}</p>
@@ -66,9 +99,9 @@ export default function Categories(){
       <br />
 
 
-      <section className="AdventureCategorie">
+      <section className="AdventureCategorie " >
                 <video 
-                    id="adventureVideo"
+                    id="Adventure"
                     src="/AdventureTriller.mp4" 
                     width={`100%`} 
                     autoPlay
@@ -104,9 +137,9 @@ export default function Categories(){
                 
                     
             </section> 
-            <section className="DramaCategorie">
+            <section className="DramaCategorie " >
                 <video 
-                    id="dramaVideo"
+                    id="Drama"
                     src="/DramaTriller.mp4" 
                     width={`100%`} 
                     autoPlay

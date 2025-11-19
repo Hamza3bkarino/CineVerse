@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 
 export default function Contact (){
     const [name,setName]=useState('')
+    const [nameError,setNameError]=useState('')
     const [email,setEmail]=useState('')
+    const [emailError,setEmailError]=useState('')
     const [message,setMessage]=useState('')
+    const [messageError,setMessageError]=useState('')
     const [alert,setAlert]=useState(false)
 
 
@@ -37,30 +40,28 @@ export default function Contact (){
 
     const handleClick = (e)=>{
         e.preventDefault();
-        const nameError = document.getElementById('nameError')
-        const emailError = document.getElementById('emailError')
-        const messageError = document.getElementById('messageError')
+        
 
         let valid = true;
         if(!name.trim()){
-            nameError.textContent='Name must be existe'
+            setNameError('Name must be existe')
             valid=false
         }else{
         
-            nameError.textContent=''
+            setNameError('')
         }
         
         if(!email.includes('@')){
-            emailError.textContent='Email must be valid'
+            setEmailError('Email must be valid')
             valid=false
         }else{
-            emailError.textContent=''
+            setEmailError('')
         } 
         if(!message.trim()){
-            messageError.textContent='message must be existe'
+            setMessageError('message must be existe')
             valid=false
         }else{
-            messageError.textContent=''
+            setMessageError('')
         }
 
         if(valid){
@@ -90,20 +91,20 @@ export default function Contact (){
                         <div className="formGroup">
                             <label htmlFor="name">Name</label>
                             <input type="text" id="name" placeholder="Your Name" value={name} onChange={(e)=>setName(e.target.value)} />
-                            <p style={{fontSize:'10px',color:'red'}} id="nameError"></p>
+                            <p style={{fontSize:'10px',color:'red'}} id="nameError">{nameError}</p>
                         </div>
 
                         <div className="formGroup">
                             <label htmlFor="email">Email</label>
                             <input type="email" id="email" placeholder="Your Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                            <p style={{fontSize:'10px',color:'red'}} id="emailError"></p>
+                            <p style={{fontSize:'10px',color:'red'}} id="emailError">{emailError}</p>
 
                         </div>
 
                         <div className="formGroup">
                             <label htmlFor="message">Message</label>
                             <textarea id="message" rows="5" placeholder="Your Message" value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
-                            <p style={{fontSize:'10px',color:'red'}} id="messageError"></p>
+                            <p style={{fontSize:'10px',color:'red'}} id="messageError">{messageError}</p>
                         </div>
 
                         <div className="formGroup">
