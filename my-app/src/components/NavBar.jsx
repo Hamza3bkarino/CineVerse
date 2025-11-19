@@ -7,7 +7,9 @@ export default function NavBar() {
 
   return (
     <nav>
-      <h1>CineVerse</h1>
+      <Link to={'/'}>
+        <h1>CineVerse</h1>
+      </Link>
       <ul>
         <li>
           {/* Search icon */}
@@ -34,6 +36,9 @@ export default function NavBar() {
 
         <li>
           <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/categories">Categories</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

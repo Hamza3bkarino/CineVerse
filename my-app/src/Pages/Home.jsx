@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { categories, movies, topMovies } from "../data/movies";
 
-export default function Home (){
+export default function Home(){
+
     const [ init , setInit ] =useState(0);
     const [curentSlide,setCurentSlide]=useState(0)
     const images= [ 
