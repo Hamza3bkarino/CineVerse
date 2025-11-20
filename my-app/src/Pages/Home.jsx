@@ -42,6 +42,14 @@ export default function Home(){
         navigate(`/categories#${value}`)
     }
 
+    const handleClickTopMovies = (id) =>{
+        navigate(`/TopMovie-Details/${id}`)
+    }
+    
+    const handleClickMovies = (id) =>{
+        navigate(`/Movie-Details/${id}`)
+    }
+
     return(
         <>
         
@@ -92,7 +100,7 @@ export default function Home(){
                 {
 
                     topMovies.map((item,index)=>(
-                        <div className="movie-card" key={index}>
+                        <div className="movie-card" key={index} onClick={()=>handleClickTopMovies(item.id)}>
                             <img src={item.img} alt={item.title} />
                             <div className="movie-info">
                                 <h3>{item.title}</h3>
@@ -146,7 +154,7 @@ export default function Home(){
 
                 <div className="movies-grid">
                     {movies.map((item, index) => (
-                    <div className="movie-card" key={index}>
+                    <div className="movie-card" key={index} onClick={()=>handleClickMovies(item.id)}>
                         <img src={item.img} alt={item.title} />
                         <div className="movie-info">
                         <h3>{item.title}</h3>

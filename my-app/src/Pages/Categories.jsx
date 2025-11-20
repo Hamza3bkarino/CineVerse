@@ -66,7 +66,7 @@ export default function Categories(){
 
   return(
     <>
-      <section className="ActionCategorie " id="Action">
+      <section className="ActionCategorie " >
         <video 
           id="Action"
           src="/extraction.mp4"  // make sure file name is simple

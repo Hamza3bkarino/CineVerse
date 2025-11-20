@@ -1,113 +1,128 @@
 export const movies = [
   {
+    id:1,
     title: "Mad Max: Fury Road",
     year: 2015,
     img: "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
     desc: "In a post-apocalyptic wasteland, Max teams up with Furiosa to escape a tyrannical warlord.",
     production: "Warner Bros",
     rate: 8.1,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:2,
     title: "Gladiator",
     year: 2000,
     img: "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
     desc: "A betrayed Roman general fights to avenge his family and reclaim his honor in the arena.",
     production: "DreamWorks",
     rate: 8.5,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:3,
     title: "Edge of Tomorrow",
     year: 2014,
     img: "https://image.tmdb.org/t/p/w500/uUHvlkLavotfGsNtosDy8ShsIYF.jpg",
     desc: "A soldier relives the same day over and over while fighting an alien invasion.",
     production: "Warner Bros",
     rate: 7.9,
-    categorie: "Action"
+    categorie: "Action",
+
   },
   {
+    id:4,
     title: "Spider-Man: No Way Home",
     year: 2021,
     img: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
     desc: "Peter Parker faces multiverse threats after his identity is revealed to the world.",
     production: "Sony Pictures",
     rate: 8.3,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:5,
     title: "The Matrix",
     year: 1999,
     img: "/matrix.jpg",
     desc: "A hacker discovers the reality he knows is a simulation and joins a rebellion.",
     production: "Warner Bros",
     rate: 8.7,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:6,
     title: "Kingsman: The Secret Service",
     year: 2014,
     img: "/Kingsman-The Secret Service.webp",
     desc: "A spy organization recruits a promising street kid into their ultra-competitive training program.",
     production: "20th Century Fox",
     rate: 7.7,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:7,
     title: "Terminator 2: Judgment Day",
     year: 1991,
     img: "/Terminator 2-Judgment Day.jfif",
     desc: "A cyborg must protect a young boy from a more advanced killing machine in the future.",
     production: "TriStar Pictures",
     rate: 8.5,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:8,
     title: "The Dark Knight",
     year: 2008,
     img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     desc: "Batman faces his greatest enemy, The Joker, in a battle for Gotham’s soul.",
     production: "Warner Bros.",
     rate: 9.0,
-    categorie: "Action"
+    categorie: "Action",
   },
   {
+    id:9,
     title: "Inception",
     year: 2010,
     img: "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
     desc: "A thief who steals secrets through dreams must perform the impossible—plant an idea.",
     production: "Legendary Pictures",
     rate: 8.8,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
   },
   {
+    id:10,
     title: "Interstellar",
     year: 2014,
     img: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
     desc: "A team of explorers travels through a wormhole searching for a new home for humanity.",
     production: "Syncopy",
     rate: 8.6,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
   },
   {
+    id:11,
     title: "Oppenheimer",
     year: 2023,
     img: "./Oppenheimer.webp",
     desc: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
     production: "Universal Pictures",
     rate: 8.6,
-    categorie: "Drama"
+    categorie: "Drama",
   },
   {
+    id:12,
     title: "Dune: Part Two",
     year: 2024,
     img: "./Dune Part Two.webp",
     desc: "Paul Atreides rises as a leader as the war for Arrakis intensifies.",
     production: "Legendary Pictures",
     rate: 8.8,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
+
   },
   {
+    id:13,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -117,6 +132,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:14,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -126,6 +142,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:15,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -135,6 +152,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:16,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -144,6 +162,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:17,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -153,6 +172,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:18,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -162,6 +182,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:19,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -171,6 +192,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:20,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -180,6 +202,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:21,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -189,6 +212,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:22,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
@@ -198,6 +222,7 @@ export const movies = [
     categorie: "Adventure"
   },
   {
+    id:23,
     title: "Joker",
     year: 2019,
     img: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
@@ -207,6 +232,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:24,
     title: "The Batman",
     year: 2022,
     img: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
@@ -216,6 +242,7 @@ export const movies = [
     categorie: "Action"
   },
   {
+    id:25,
     title: "John Wick: Chapter 4",
     year: 2023,
     img: "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
@@ -225,6 +252,7 @@ export const movies = [
     categorie: "Action"
   },
   {
+    id:26,
     title: "The Shawshank Redemption",
     year: 1994,
     img: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
@@ -234,6 +262,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:27,
     title: "Forrest Gump",
     year: 1994,
     img: "./Forrest Gump.webp",
@@ -243,6 +272,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:28,
     title: "The Shawshank Redemption",
     year: 1994,
     img: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
@@ -252,6 +282,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:29,
     title: "Forrest Gump",
     year: 1994,
     img: "./Forrest Gump.webp",
@@ -261,6 +292,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:30,
     title: "The Shawshank Redemption",
     year: 1994,
     img: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
@@ -270,6 +302,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:31,
     title: "Forrest Gump",
     year: 1994,
     img: "./Forrest Gump.webp",
@@ -279,6 +312,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:32,
     title: "Forrest Gump",
     year: 1994,
     img: "./Forrest Gump.webp",
@@ -288,6 +322,7 @@ export const movies = [
     categorie: "Drama"
   },
   {
+    id:33,
     title: "Pulp Fiction",
     year: 1994,
     img: "./Pulp Fiction.webp",
@@ -297,6 +332,7 @@ export const movies = [
     categorie: "Crime"
   },
   {
+    id:34,
     title: "The Lord of the Rings: The Return of the King",
     year: 2003,
     img: "./The Lord of the Rings_The Return of the King.webp",
@@ -306,6 +342,7 @@ export const movies = [
     categorie: "Fantasy"
   },
   {
+    id:35,
     title: "Fight Club",
     year: 1999,
     img: "./Fight club.webp",
@@ -319,15 +356,18 @@ export const movies = [
 
 export const topMovies = [
   {
+    id:8,
     title: "The Dark Knight",
     year: 2008,
     img: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     desc: "Batman faces his greatest enemy, The Joker, in a battle for Gotham’s soul.",
     production: "Warner Bros.",
     rate: 9.0,
-    categorie: "Action"
+    categorie: "Action",
+    wallpapper:'/walppapers/Dark_Knight.webp'
   },
   {
+    id:9,
     title: "Inception",
     year: 2010,
     img: "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
@@ -337,51 +377,60 @@ export const topMovies = [
     categorie: "Sci-Fi"
   },
   {
+    id:10,
     title: "Interstellar",
     year: 2014,
     img: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
     desc: "A team of explorers travels through a wormhole searching for a new home for humanity.",
     production: "Syncopy",
     rate: 8.6,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
+    wallpapper:'walppapers/Interstellar.webp'
+
   },
   {
+    id:11,
     title: "Oppenheimer",
     year: 2023,
-    img: "./Oppenheimer.webp",
+    img: "/Oppenheimer.webp",
     desc: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
     production: "Universal Pictures",
     rate: 8.6,
-    categorie: "Drama"
+    categorie: "Drama",
+
   },
   {
+    id:12,
     title: "Dune: Part Two",
     year: 2024,
-    img: "./Dune Part Two.webp",
+    img: "/Dune Part Two.webp",
     desc: "Paul Atreides rises as a leader as the war for Arrakis intensifies.",
     production: "Legendary Pictures",
     rate: 8.8,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
   },
   {
+    id:13,
     title: "Avatar",
     year: 2009,
     img: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
   },
   {
+    id:23,
     title: "Joker",
     year: 2019,
     img: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
     desc: "The origin story of Arthur Fleck and his transformation into the Joker.",
     production: "Warner Bros.",
     rate: 8.4,
-    categorie: "Drama"
+    categorie: "Drama",
   },
   {
+    id:24,
     title: "The Batman",
     year: 2022,
     img: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
@@ -391,6 +440,7 @@ export const topMovies = [
     categorie: "Action"
   },
   {
+    id:25,
     title: "John Wick: Chapter 4",
     year: 2023,
     img: "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
@@ -400,6 +450,7 @@ export const topMovies = [
     categorie: "Action"
   },
   {
+    id:26,
     title: "The Shawshank Redemption",
     year: 1994,
     img: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
