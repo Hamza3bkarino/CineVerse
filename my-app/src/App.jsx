@@ -8,6 +8,7 @@ import Categories from './Pages/Categories'
 import Results from './Pages/Results'
 import TopMovieDetails from './Pages/TopMovieDetails'
 import MovieDetails from './Pages/MovieDetails'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Movie-Details/:id' element={<MovieDetails/>} />
           <Route path='/contact' element={<Contact/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
 
   )

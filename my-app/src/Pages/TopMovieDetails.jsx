@@ -5,7 +5,7 @@ export default function TopMovieDetails() {
 
     const { id } = useParams();
     const navigate = useNavigate();
-    // better than filter
+
     const movie = topMovies.find(elm => elm.id === Number(id));
 
     if (!movie) {
@@ -34,7 +34,7 @@ export default function TopMovieDetails() {
                         <p className="infoOfMovie">{movie.categorie}</p>
                         <p className="infoOfMovie">{movie.production} / {movie.year}</p>
                         <div className="moviesWatchBtn">
-                            <button id="btnWatch" >
+                            <button id="btnWatch" onClick={()=> window.open(movie.watch, "_blank")} >
                                 Watch Movie
                             </button>
                             <button id="btnReturn" onClick={() => navigate("/")}>

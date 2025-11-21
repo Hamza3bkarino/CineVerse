@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { categories, movies, topMovies } from "../data/movies";
 import { useNavigate } from "react-router-dom";
+import PopUp from "../components/PopUp";
 
 export default function Home(){
 
     const [ init , setInit ] =useState(0);
     const [curentSlide,setCurentSlide]=useState(0);
+    const [isOpen,setIsOpen]=useState(false);
     const navigate= useNavigate()
 
     const images= [ 
@@ -22,6 +24,25 @@ export default function Home(){
         },10000)
         return ()=> clearInterval(interval)
     },[])
+
+    useEffect(() => {
+        // Check if popup was already dismissed
+        const popupDismissed = localStorage.getItem("popupDismissed");
+    
+        if (!popupDismissed) {
+          const timer = setTimeout(() => {
+            setIsOpen(true);
+          }, 3000);
+    
+          return () => clearTimeout(timer);
+        }
+      }, []);
+    
+      const handleClose = () => {
+        setIsOpen(false);
+        localStorage.setItem("popupDismissed", "true");
+      };
+    
 
 
 
@@ -45,15 +66,20 @@ export default function Home(){
     const handleClickTopMovies = (id) =>{
         navigate(`/TopMovie-Details/${id}`)
     }
-    
+
     const handleClickMovies = (id) =>{
         navigate(`/Movie-Details/${id}`)
     }
 
     return(
         <>
+            {isOpen &&(
+
+                <PopUp isOpen={isOpen} onClose={handleClose}/>
+            
+            )}
         
-            <section className="HeroSectionHome" style={{  backgroundImage:`url('../public/${images[init]}')`, transition:'0.5s'}}>
+            <section className="HeroSectionHome" style={{  backgroundImage:`url('${images[init]}')`, transition:'0.5s'}}>
                 <div className="heroContent">
                     <h1>CineVerse – Where Stories Come Alive</h1>            
                     <button onClick={handleClickDiscover}>
@@ -61,7 +87,15 @@ export default function Home(){
                     </button>
                 </div>
             </section>
+            <div style={{position:'relative'}}>
+                <svg viewBox="0 0 300 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="5" x2="120" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                    <line x1="180" y1="5" x2="300" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                </svg>
 
+
+                <h1 className="section-title" style={{textAlign:'center', marginTop: '-47px',marginBottom: '76px'}}>Top Movies</h1>
+            </div>
             <section className="topMoviesSection">
 
                     <div className="titleTopMovieSection">
@@ -113,9 +147,14 @@ export default function Home(){
 
 
             </section>
-
-
-
+            <div style={{position:'relative'}}>
+                <svg viewBox="0 0 300 10" xmlns="http://www.w3.org/2000/svg" style={{position:'absolute'}}>
+                    <line x1="0" y1="5" x2="120" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                    <line x1="180" y1="5" x2="300" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                </svg>
+                
+                <h1 className="section-title" style={{textAlign:'center', margin:'69px 0px -43px 0px',fontsize: '40px',fontWeight: '800'}}>All Movies</h1>
+            </div>
 
             <section className="moviesSection" id="DiscoverMenu" >
 
@@ -166,8 +205,13 @@ export default function Home(){
             </section>
 
             <section className="SliderSectionCategorie">
-                <h1>Categories :</h1>
-
+                <div style={{position:'relative'}}>
+                    <svg viewBox="0 0 300 10" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="5" x2="120" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                        <line x1="180" y1="5" x2="300" y2="5" stroke="#1d78b5a1" strokeWidth="2"/>
+                    </svg>
+                    <h1 className="section-title">Categories :</h1>
+                </div>
                 <div className="sliderWrapper" >
                     <div className="sliderFlex" style={{transform:`translateX(-${curentSlide * 100 }%)`}}>
                         {categories.map((item, index) => (

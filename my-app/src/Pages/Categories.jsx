@@ -1,12 +1,13 @@
 import { movies } from "../data/movies";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 export default function Categories(){
 
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Run when URL changes (ex: #Adventure)
@@ -25,6 +26,8 @@ export default function Categories(){
       }
     }
   }, [location]);
+
+
 
 
 
@@ -64,12 +67,18 @@ export default function Categories(){
   }
 
 
+  const handleClickMovies = (id) =>{
+    console.log('cliked');
+    
+    navigate(`/Movie-Details/${id}`)
+  }
+
   return(
     <>
       <section className="ActionCategorie " >
         <video 
           id="Action"
-          src="/extraction.mp4"  // make sure file name is simple
+          src="/extraction.mp4"  
           width="100%" 
           autoPlay
           muted={false}          // will attempt to play sound, browser may block
@@ -85,7 +94,7 @@ export default function Categories(){
         <div className="ActionMovies">
           <div className="movies-grid">
             {movies.map((item,index)=>(item.categorie === 'Action' ?
-              <div className="movie-card" key={index}>
+              <div className="movie-card" key={index} onClick={()=>handleClickMovies(item.id)}>
                 <img src={item.img} alt={item.title} loading="eager"/>
                 <div className="movie-info">
                   <h3>{item.title}</h3>
@@ -122,7 +131,7 @@ export default function Categories(){
                     <div className="movies-grid">
                         {movies.map((item,index)=>(
                             item.categorie === 'Adventure' ?
-                            <div className="movie-card" key={index}>
+                            <div className="movie-card" key={index} onClick={()=>handleClickMovies(item.id)}>
                                 <img src={item.img} alt={item.title} />
                                 <div className="movie-info">
                                     <h3>{item.title}</h3>
@@ -160,7 +169,7 @@ export default function Categories(){
                     <div className="movies-grid">
                         {movies.map((item,index)=>(
                             item.categorie === 'Drama' ?
-                            <div className="movie-card" key={index}>
+                            <div className="movie-card" key={index} onClick={()=>handleClickMovies(item.id)}>
                                 <img src={item.img} alt={item.title} />
                                 <div className="movie-info">
                                     <h3>{item.title}</h3>

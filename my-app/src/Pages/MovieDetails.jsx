@@ -1,18 +1,18 @@
-import { useParams } from "react-router-dom"
+import { useParams , useNavigate } from "react-router-dom"
 import { movies } from "../data/movies";
 
 
 export default function MovieDetails(){
     const {id} = useParams()
+    const navigate = useNavigate();
 
+    const movie = movies.find(elm => elm.id === Number(id));
 
-        const movie = movies.find(elm => elm.id === Number(id));
+    if (!movie) {
+        return <h2>Movie not found</h2>;
+    }
     
-        if (!movie) {
-            return <h2>Movie not found</h2>;
-        }
-    
-        const background = '../../public/stranger-things-3840x2160-24522.jpg'
+    const background = '../../public/stranger-things-3840x2160-24522.jpg'
 
 
     return(
@@ -31,6 +31,14 @@ export default function MovieDetails(){
                         <p>{movie.desc}</p>
                         <p className="infoOfMovie">{movie.categorie}</p>
                         <p className="infoOfMovie">{movie.production} / {movie.year}</p>
+                        <div className="moviesWatchBtn">
+                            <button id="btnWatch" onClick={()=> window.open(movie.watch, "_blank")}>
+                                Watch Movie
+                            </button>
+                            <button id="btnReturn" onClick={() => navigate("/")}>
+                                Return
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>

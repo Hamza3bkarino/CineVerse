@@ -8,6 +8,7 @@ export const movies = [
     production: "Warner Bros",
     rate: 8.1,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-mad-max-fury-road-full-19677.5349145'
   },
   {
     id:2,
@@ -18,6 +19,7 @@ export const movies = [
     production: "DreamWorks",
     rate: 8.5,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-gladiator-full-19456'
   },
   {
     id:3,
@@ -28,6 +30,7 @@ export const movies = [
     production: "Warner Bros",
     rate: 7.9,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-edge-of-tomorrow-full-19535.5349076'
 
   },
   {
@@ -39,6 +42,7 @@ export const movies = [
     production: "Sony Pictures",
     rate: 8.3,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-spider-man-no-way-home-full-71326'
   },
   {
     id:5,
@@ -49,6 +53,7 @@ export const movies = [
     production: "Warner Bros",
     rate: 8.7,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-matrix-full-19724.5349115'
   },
   {
     id:6,
@@ -59,6 +64,7 @@ export const movies = [
     production: "20th Century Fox",
     rate: 7.7,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-kingsman-the-secret-service-full-19542.5352064'
   },
   {
     id:7,
@@ -69,6 +75,7 @@ export const movies = [
     production: "TriStar Pictures",
     rate: 8.5,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-terminator-2-judgment-day-full-19609.5297560'
   },
   {
     id:8,
@@ -79,6 +86,8 @@ export const movies = [
     production: "Warner Bros.",
     rate: 9.0,
     categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-dark-knight-full-19752.5297326'
+
   },
   {
     id:9,
@@ -99,6 +108,8 @@ export const movies = [
     production: "Syncopy",
     rate: 8.6,
     categorie: "Sci-Fi",
+    watch:'https://hdtoday.cc/watch-movie/watch-interstellar-full-19788.5297302'
+
   },
   {
     id:11,
@@ -109,6 +120,8 @@ export const movies = [
     production: "Universal Pictures",
     rate: 8.6,
     categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-oppenheimer-full-98446.9759013'
+
   },
   {
     id:12,
@@ -119,6 +132,7 @@ export const movies = [
     production: "Legendary Pictures",
     rate: 8.8,
     categorie: "Sci-Fi",
+    watch:'https://hdtoday.cc/watch-movie/watch-dune-part-two-full-106510.10331785'
 
   },
   {
@@ -129,7 +143,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:14,
@@ -139,7 +155,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:15,
@@ -149,7 +167,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:16,
@@ -159,7 +179,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:17,
@@ -169,7 +191,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:18,
@@ -179,7 +203,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:19,
@@ -189,7 +215,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:20,
@@ -199,7 +227,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:21,
@@ -209,7 +239,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:22,
@@ -219,7 +251,9 @@ export const movies = [
     desc: "A paraplegic Marine travels to Pandora and joins the Na’vi people.",
     production: "20th Century Studios",
     rate: 7.6,
-    categorie: "Adventure"
+    categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:23,
@@ -229,7 +263,9 @@ export const movies = [
     desc: "The origin story of Arthur Fleck and his transformation into the Joker.",
     production: "Warner Bros.",
     rate: 8.4,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
+
   },
   {
     id:24,
@@ -239,7 +275,8 @@ export const movies = [
     desc: "Batman investigates a series of murders and uncovers deep corruption.",
     production: "Warner Bros",
     rate: 8.1,
-    categorie: "Action"
+    categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-batman-full-16076.8142442'
   },
   {
     id:25,
@@ -249,7 +286,9 @@ export const movies = [
     desc: "John Wick fights his way toward defeating the High Table.",
     production: "Lionsgate",
     rate: 8.1,
-    categorie: "Action"
+    categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-john-wick-chapter-4-full-90163'
+
   },
   {
     id:26,
@@ -259,7 +298,9 @@ export const movies = [
     desc: "Two imprisoned men bond over years, finding solace and redemption through acts of common decency.",
     production: "Columbia Pictures",
     rate: 9.3,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-shawshank-redemption-full-19679'
+
   },
   {
     id:27,
@@ -269,7 +310,8 @@ export const movies = [
     desc: "The life story of a simple man who witnesses and influences several defining historical events.",
     production: "Paramount Pictures",
     rate: 8.8,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-forrest-gump-full-19710'
   },
   {
     id:28,
@@ -279,7 +321,9 @@ export const movies = [
     desc: "Two imprisoned men bond over years, finding solace and redemption through acts of common decency.",
     production: "Columbia Pictures",
     rate: 9.3,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-shawshank-redemption-full-19679'
+
   },
   {
     id:29,
@@ -289,7 +333,9 @@ export const movies = [
     desc: "The life story of a simple man who witnesses and influences several defining historical events.",
     production: "Paramount Pictures",
     rate: 8.8,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-forrest-gump-full-19710'
+
   },
   {
     id:30,
@@ -299,7 +345,9 @@ export const movies = [
     desc: "Two imprisoned men bond over years, finding solace and redemption through acts of common decency.",
     production: "Columbia Pictures",
     rate: 9.3,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-shawshank-redemption-full-19679'
+
   },
   {
     id:31,
@@ -309,7 +357,8 @@ export const movies = [
     desc: "The life story of a simple man who witnesses and influences several defining historical events.",
     production: "Paramount Pictures",
     rate: 8.8,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-forrest-gump-full-19710'
   },
   {
     id:32,
@@ -319,37 +368,42 @@ export const movies = [
     desc: "The life story of a simple man who witnesses and influences several defining historical events.",
     production: "Paramount Pictures",
     rate: 8.8,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-forrest-gump-full-19710'
+
   },
   {
     id:33,
     title: "Pulp Fiction",
     year: 1994,
-    img: "./Pulp Fiction.webp",
+    img: "/Pulp Fiction.webp",
     desc: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine.",
     production: "Miramax Films",
     rate: 8.9,
-    categorie: "Crime"
+    categorie: "Crime",
+    watch:'https://hdtoday.cc/watch-movie/watch-pulp-fiction-full-19700'
   },
   {
     id:34,
     title: "The Lord of the Rings: The Return of the King",
     year: 2003,
-    img: "./The Lord of the Rings_The Return of the King.webp",
+    img: "/The Lord of the Rings_The Return of the King.webp",
     desc: "Aragorn leads the world of men against Sauron's forces, while Frodo and Sam approach Mount Doom.",
     production: "New Line Cinema",
     rate: 8.9,
-    categorie: "Fantasy"
+    categorie: "Fantasy",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-lord-of-the-rings-the-return-of-the-king-full-19681.5349154'
   },
   {
     id:35,
     title: "Fight Club",
     year: 1999,
-    img: "./Fight club.webp",
+    img: "/Fight club.webp",
     desc: "An insomniac office worker looking for a way to change his life crosses paths with a devil-may-care soap maker.",
     production: "20th Century Fox",
     rate: 8.8,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-fight-club-full-19651.5297485'
   }
 ];
 
@@ -364,7 +418,7 @@ export const topMovies = [
     production: "Warner Bros.",
     rate: 9.0,
     categorie: "Action",
-    wallpapper:'/walppapers/Dark_Knight.webp'
+    watch:'https://hdtoday.cc/watch-movie/watch-the-dark-knight-full-19752.5297326'
   },
   {
     id:9,
@@ -374,7 +428,8 @@ export const topMovies = [
     desc: "A thief who steals secrets through dreams must perform the impossible—plant an idea.",
     production: "Legendary Pictures",
     rate: 8.8,
-    categorie: "Sci-Fi"
+    categorie: "Sci-Fi",
+    watch:'https://hdtoday.cc/watch-movie/watch-inception-full-19764.5297266'
   },
   {
     id:10,
@@ -385,8 +440,7 @@ export const topMovies = [
     production: "Syncopy",
     rate: 8.6,
     categorie: "Sci-Fi",
-    wallpapper:'walppapers/Interstellar.webp'
-
+    watch:'https://hdtoday.cc/watch-movie/watch-interstellar-full-19788.5297302'
   },
   {
     id:11,
@@ -397,6 +451,7 @@ export const topMovies = [
     production: "Universal Pictures",
     rate: 8.6,
     categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-oppenheimer-full-98446.9759013'
 
   },
   {
@@ -408,6 +463,7 @@ export const topMovies = [
     production: "Legendary Pictures",
     rate: 8.8,
     categorie: "Sci-Fi",
+    watch:'https://hdtoday.cc/watch-movie/watch-dune-part-two-full-106510.10331785'
   },
   {
     id:13,
@@ -418,6 +474,7 @@ export const topMovies = [
     production: "20th Century Studios",
     rate: 7.6,
     categorie: "Adventure",
+    watch:'https://hdtoday.cc/watch-movie/watch-avatar-full-19690.5297449'
   },
   {
     id:23,
@@ -428,6 +485,7 @@ export const topMovies = [
     production: "Warner Bros.",
     rate: 8.4,
     categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-joker-full-9766'
   },
   {
     id:24,
@@ -437,7 +495,8 @@ export const topMovies = [
     desc: "Batman investigates a series of murders and uncovers deep corruption.",
     production: "Warner Bros",
     rate: 8.1,
-    categorie: "Action"
+    categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-batman-full-16076.8142442'
   },
   {
     id:25,
@@ -447,7 +506,8 @@ export const topMovies = [
     desc: "John Wick fights his way toward defeating the High Table.",
     production: "Lionsgate",
     rate: 8.1,
-    categorie: "Action"
+    categorie: "Action",
+    watch:'https://hdtoday.cc/watch-movie/watch-john-wick-chapter-4-full-90163'
   },
   {
     id:26,
@@ -457,7 +517,8 @@ export const topMovies = [
     desc: "Two imprisoned men bond over years, finding solace and redemption through acts of common decency.",
     production: "Columbia Pictures",
     rate: 9.3,
-    categorie: "Drama"
+    categorie: "Drama",
+    watch:'https://hdtoday.cc/watch-movie/watch-the-shawshank-redemption-full-19679'
   }
 ];
 

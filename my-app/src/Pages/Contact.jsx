@@ -66,6 +66,9 @@ export default function Contact (){
 
         if(valid){
             setAlert(true)
+            setEmail('')
+            setName('')
+            setMessage('')
         }
         
     }
@@ -115,9 +118,9 @@ export default function Contact (){
                     </form>
                 </div>
 
-                <h1  id="venomTitle" className="venomBG">We Are Venome</h1>
 
             </section>
+            <h1  id="venomTitle" className="venomBG">We Are Venome</h1>
         </>
     )
 }
