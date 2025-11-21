@@ -1,0 +1,649 @@
+
+/* body{
+  background-color: black;
+} */
+ html{
+  scroll-behavior: smooth;
+ }
+
+.HeroSectionHome{
+  background-color: rgba(0, 0, 0, 0.588);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -95px;
+  /* z-index: -1; */
+}
+
+
+.heroContent{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4% auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+.heroContent h1{
+  font-size: 60px;
+  width: 1022px;
+  text-align: center;
+  line-height: 92px;
+  color: white;
+  text-shadow: 0px 3px 7px #ffffff99;
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-optical-sizing: auto;
+
+}
+.heroContent button{
+  padding: 18px 35px;
+  color: white;
+  background-color: #1d78b5a1;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'CINZEL';
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+
+
+
+
+.topMoviesSection{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.topMoviesSection::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/i-know-what-you-did-3840x2160-22844.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  transform: scale(1.1); 
+  z-index: -1;
+}
+
+.moviesSection{
+  position: relative;
+  overflow: hidden;
+  margin: 120px 0px;
+  border-radius: 10px;
+}
+.moviesSection::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/the-witcher-season-3840x2160-24316.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  transform: scale(1.1); 
+  z-index: -1;
+}
+
+
+
+.movies-grid {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 28px;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 44px 10px;
+}
+
+/* Movie Card */
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+  background: #111;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Shadow + Slight Pop on Hover */
+.movie-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 23px 23px #142c39cf;
+}
+
+/* Poster */
+.movie-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+/* Slight Zoom on Hover */
+.movie-card:hover img {
+  transform: scale(1.18);
+  filter: brightness(70%);
+}
+
+/* Overlay Info (hidden) */
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.35s ease;
+  background-color: #0000004d;
+}
+
+/* Show info on hover */
+.movie-card:hover .movie-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title */
+.movie-info h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Year  */
+.movie-info p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.titleMovieSection,.titleTopMovieSection{
+  margin-top: 50px;
+}
+.moviesSection .titleMovieSection h1,.titleTopMovieSection h1{
+  margin-left: 50px;
+  font-weight: 900;
+  color: white;
+}
+.titleMovieSection,.titleTopMovieSection{
+  display: flex;
+  justify-content: space-between;
+}
+.moviesSection .titleMovieSection img{
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.titleTopMovieSection img{
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+/* -----------Categorie-------------- */
+.SliderSectionCategorie{
+  margin-top: 10%;
+}
+.SliderSectionCategorie h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  margin: -53px 0px 67px 0px;
+  color: black;
+}
+.sliderWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;     /* hides other slides */
+}
+
+.sliderFlex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.categorieContainer {
+  background-color: rgba(0, 0, 0, 0.588);
+  background-blend-mode: multiply;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 0 0 100%;      
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content p {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  text-shadow: 0px 10px 12px black;
+  width: 60%;
+  text-align: center;
+}
+
+.content button {
+  padding: 16px 71px;
+  background-color: #0d1922ba;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.content button:hover {
+  border: 2px solid white;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* ---- SLIDER ARROWS ---- */
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.ctrlBtn {
+  background: #000000a7;
+  color: white;
+  font-size: 40px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  pointer-events: auto;    /* enable button clicks */
+}
+
+.ctrlBtn:hover {
+  background: #ffffff30;
+}
+
+/* -----------Categorie-------------- */
+
+
+.contactSection {
+  background-image: url('../public//venom.jpg');
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.588);
+  background-blend-mode: multiply;
+  height: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -95px;
+}
+
+.contactContainer {
+  max-width: 500px;
+  margin: 54px auto;
+  background-color: transparent;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px 12px 25px white;
+  line-height: 17px;
+
+}
+
+.contactContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contactContainer p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contactForm .formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 94%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #132127a1;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0px 6px 11px black;
+}
+.contactForm input::placeholder,
+.contactForm textarea::placeholder{
+  color: white;
+  font-family: "Cinzel", serif;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  box-shadow: 0 0 0 3px #15304bd1;
+}
+
+.sendBtn {
+  background-color: #132127a1;
+  color: #fff;
+  font-weight: 700;
+  padding: 17px 54px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  border: 3px solid black;
+  box-shadow: 0px 6px 11px black;
+  font-family: "Cinzel", serif;
+
+}
+
+.sendBtn:hover {
+  background-color: #132127e9;
+  transform: scale(1.05);
+}
+
+
+.venomBG {
+  position: relative;
+  left: 13%;
+  font-size: 112px;
+  width: 70%;
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 12px;
+  z-index: 1;
+  pointer-events: none;
+  color: transparent;
+  background-image: url(/public/venom.jpg);
+  background-size: cover;
+  background-position: left -75%;
+  background-clip: text;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.15);
+  }
+  
+
+
+
+  .alert {
+    max-width: 350px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    color: #155724;
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+    opacity: 1;
+    animation: slideIn 0.3s ease-out;
+    z-index: 9999;
+    position: absolute;
+    right: 38%;
+    top: 12%;
+  }
+  
+  .alert-message {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .alert-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #155724;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  /* Animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  
+/* ----------------categoreis---------------- */
+
+
+  .ActionCategorie,
+  .AdventureCategorie,
+  .DramaCategorie {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+  }
+  .ActionCategorie{
+    top:-96px
+  }
+  .AdventureCategorie {
+    margin-top: 100vh; /* pushes it visually down */
+  }
+  
+  .DramaCategorie {
+    margin-top: 100vh;
+    min-height: 200vh;
+  }
+  
+
+.ActionCategorie h1,.AdventureCategorie h1,.DramaCategorie h1{
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  font-size: 80px;
+  z-index: 10;
+  width: 100%;
+
+}
+.vdBG{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 106vh;
+  z-index: 10;
+  background-color: #00000087;
+}
+  
+.ActionMovies,.AdventureMovies,.DramaMovies{
+  position: absolute;
+  width: 100%;
+  bottom: -46%;
+  z-index: 10;
+  bottom:-85%;
+}
+.DramaMovies{
+  bottom: -8%;
+}
+
+
+
+/* ----------------categoreis---------------- */
+
+/* ----------------result---------------- */
+.result{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+ 
+}
+.result::before{
+  content: '';
+  position: absolute;
+  top: -116px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/superman.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00000094;
+  background-blend-mode: multiply;
+  filter: blur(2px);
+}
+/* ----------------result---------------- */
+
+/* ----------------details---------------- */
+
+.DetailsSection{
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000b0;
+  background-blend-mode: multiply;
+  position: relative;
+  margin-top: -96px;
+}
+
+.movieDetails{
+  display: flex;
+  width: 100%;
+  margin: 0% auto;
+  gap: 55px;
+  justify-content: center;
+  position: absolute;
+  top: 32%;
+}
+.movieData {
+  color: white;
+  width: 38%;
+  font-weight: 700;
+  margin-top: -43px;
+}
+.movieData h2{
+  font-size: 40px;
+
+}
+.movieData p {
+  line-height: 35px;
+}
+.infoOfMovie{
+  color: #eee;
+}
+
+.movieDetails img{
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+.MovieImg:hover img{
+  transform: scale(1.18);
+  filter: brightness(70%);
+}
+.MovieImg p{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-top: 0px;
+  text-shadow: 0px 2px 4px white;
+}
+
+.moviesWatchBtn{
+  display: flex;
+  gap: 42px;
+}
+#btnWatch,
+#btnReturn
+{
+  padding: 14px 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0f7348;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Cinzel", serif;
+  cursor: pointer;
+}
+
+#btnReturn{
+  padding: 14px 73px;
+  background-color: #390301;
+}
+#btnWatch:hover{
+  background-color: #12915a;
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+#btnReturn:hover{
+  background-color: #4f0603;
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+/* ----------------details---------------- */

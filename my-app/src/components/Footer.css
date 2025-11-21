@@ -1,0 +1,218 @@
+/* Define the new accent color as a CSS variable for easier management */
+:root {
+    --accent-color: #173b57; /* The new deep blue/grey accent color */
+    --accent-color-darker: #08121a; /* A slightly darker shade for hover/active states */
+  }
+  
+  /* Base Styles */
+  .footer {
+    background: radial-gradient(circle at center, #141414 0%, #0b0b0b 100%);
+    color: #ccc;
+    padding: 80px 20px 30px;
+    border-top: 1px solid #222;
+    margin-top: 80px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /* top: 387px; */
+}
+
+  
+  /* Main Content Grid */
+  .container {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px 40px;
+    padding-bottom: 40px;
+  }
+  
+  /* Section Headings */
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #193851;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color); /* Use accent color */
+    display: inline-block;
+    padding-bottom: 5px;
+    line-height: 1;
+  }
+  
+  /* Brand Section */
+  .logo {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--accent-color); /* Use accent color */
+    text-shadow: 0 0 10px rgba(15, 29, 40, 0.6); /* Cinematic glow with accent color */
+  }
+  
+  .text {
+    margin-top: 15px;
+    color: #adadad;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  
+  .socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Slightly reduced gap for icons */
+  }
+  
+  .socials a {
+    color: #adadad;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    font-size: 24px; /* Size for icons */
+    width: 40px; /* Make icons clickable area larger */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333; /* Subtle border for definition */
+    border-radius: 50%; /* Circular icons */
+    background-color: #1a1a1a;
+  }
+  
+  .socials a:hover {
+    color: white; /* White icon on hover */
+    background-color: var(--accent-color); /* Accent background on hover */
+    border-color: var(--accent-color); /* Accent border on hover */
+    transform: translateY(-3px) scale(1.1); /* More pronounced lift and scale */
+    box-shadow: 0 0 15px rgba(15, 29, 40, 0.8); /* Glow effect on hover */
+  }
+  
+  /* Links Section */
+  .links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin: 12px 0;
+  }
+  
+  .links a {
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    padding-left: 27px;
+    position: relative;
+  }
+  
+  .links a::before {
+    content: '▶';
+    color: var(--accent-color); /* Use accent color */
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  
+  .links a:hover {
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Newsletter */
+  .newsletter-section .text {
+      margin-bottom: 20px;
+  }
+  
+  .newsletter {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .newsletter input {
+    padding: 12px;
+    flex: 1;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #eee;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .newsletter input:focus {
+      border-color: var(--accent-color); /* Highlight border on focus with accent color */
+      box-shadow: 0 0 8px rgba(15, 29, 40, 0.7); /* Glow effect on focus */
+  }
+  
+  .subscribe-btn {
+    padding: 12px 20px;
+    background: var(--accent-color); /* Use accent color */
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .subscribe-btn:hover {
+    background: var(--accent-color-darker); /* Darker accent for hover */
+    transform: scale(1.02);
+  }
+  
+  /* Footer Bottom */
+  .bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    padding: 20px 0 0;
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+      .container {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+  }
+  
+  @media (max-width: 550px) {
+      .newsletter {
+        flex-direction: column;
+        box-shadow: none;
+      }
+  
+      .newsletter input,
+      .subscribe-btn {
+        border-radius: 6px !important;
+        width: 100%;
+      }
+  
+      .newsletter input {
+          border-radius: 6px;
+      }
+  
+      .subscribe-btn {
+        margin-top: 10px;
+      }
+  
+      .footer {
+          padding: 60px 20px 20px;
+      }
+  
+      .socials a {
+          font-size: 22px; /* Adjust icon size for smaller screens if needed */
+          width: 38px;
+          height: 38px;
+      }
+  }
